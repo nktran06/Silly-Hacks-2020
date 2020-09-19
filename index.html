@@ -4,11 +4,45 @@
     <meta charset="utf-8" />
     <title>MainPage</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300;500&display=swap" rel="stylesheet">
 
+
+</head>
+<style>
+    h1{
+        font-family: 'Grandstander', cursive;
+        font-size: 100px ;
+        text-shadow: 3px 3px #ff0000;
+        
+    }
+    h3{
+        font-family: 'Grandstander', cursive;
+        font-weight: lighter;
+    }
+    body{
+        background-image: url('whiteback.jpg');
+        background-position: center;
+    }
+    .rick-photo{
+        position: absolute;
+        top: 1195px;
+        left: 426px;
+    }
+    .rick-background{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+</style>
 <body>
     <div class="Title">
-            <center><h1>Where's Rick?</h1></center>
+           <center><h1>Where's Rick?</h1></center>
+            
+    </div>
+    <div class="instructions">
+        <center><h3>Use your mouse to search for Rick!</h3></center>
+        <center><h3>Click on Rick when you find him!</h3></center>
     </div>
 
         <div class="content">
@@ -16,15 +50,31 @@
 
             </section>
             <div class="answer">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Can't seem to find the answer?</a>
+                <center><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Can't seem to find the answer?</a></center>
 
             </div>
-
-            <div class="img-background">
-                <center><img src = "findRick1.png" alt=""></center>
+            
+            <div style = "position: relative; left: 0; top: 0;">
+                
+                    <center><img src = "findRick1.png" alt="" class="rick-background"></center>
+                    <img src="rick.png" value="PLAY"  onclick="play()" class="rick-photo" style="width:20px;height:32px;">
+                    <audio id="audio" src="RickSong.mp3" ></audio>
+                    
                 
             </div>
+
         </div>
+
+
+    <script>
+        function play(){
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
+        
+
+         
 </body>
 
 </html>
