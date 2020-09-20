@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300;500&display=swap" rel="stylesheet">
 
-
 </head>
 <style>
     h1{
@@ -23,16 +22,6 @@
         background-image: url('whiteback.jpg');
         background-position: center;
     }
-    .rick-photo{
-        position: absolute;
-        top: 1195px;
-        left: 426px;
-    }
-    .rick-background{
-        position: relative;
-        top: 0;
-        left: 0;
-    }
     
 </style>
 <body>
@@ -45,31 +34,28 @@
         <center><h3>Click on Rick when you find him!</h3></center>
     </div>
 
-        <div class="content">
-            <section id = "the-grid">
+           <div id="wrapper">
 
-            </section>
+        <div class="content">
             <div class="answer">
                 <center><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Can't seem to find the answer?</a></center>
-
             </div>
-            
-            <div style = "position: relative; left: 0; top: 0;">
+        
+            <div class ="parent">
                 
                     <center><img src = "findRick1.png" alt="" class="rick-background"></center>
-                    <img src="rick.png" value="PLAY"  onclick="play()" class="rick-photo" style="width:20px;height:32px;">
+                    <img src="rick.png" value="PLAY"  onclick="play();" class="rick-photo" style="width:20px;height:32px;">
                     <audio id="audio" src="RickSong.mp3" ></audio>
-                    
-                
             </div>
 
         </div>
-
+    </div>
 
     <script>
         function play(){
             var audio = document.getElementById("audio");
             audio.play();
+            alert("Congrats! You found Rick Astley!");
         }
     </script>
         
