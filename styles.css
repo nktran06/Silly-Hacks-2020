@@ -12,14 +12,16 @@
 }
 
 .img-background{
-    background-image: url('whiteback.jpg')
+    background-image: url('whiteback.jpg');
+    background-position: center;
 
 }
 
-.img-rick-hiding{
-    background-image: url('findRick1.png')
-    overflow: hidden;
+#wrapper{
+    width: 70%;
+    margin: 0 auto;
 }
+
 .Title{
     margin-bottom: -50px;
 }
@@ -34,4 +36,24 @@
 
     font-family: 'Grandstander', cursive;
     margin-bottom: 15px;
+}
+
+.parent{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.rick-background{
+    position: relative;
+    top: 100;
+    left: 0;
+    border: 15px solid greenyellow;
+
+}
+
+.rick-photo{
+    position: absolute;
+    top: 56%;
+    left: 60%;
 }
